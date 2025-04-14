@@ -18,13 +18,13 @@ return {
           },
         },
         marksman = {},
-        rubocop = {
-          -- See: https://docs.rubocop.org/rubocop/usage/lsp.html
-          cmd = { "bundle", "exec", "rubocop", "--lsp" },
-          root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
-        },
+        -- rubocop = {
+        --   -- See: https://docs.rubocop.org/rubocop/usage/lsp.html
+        --   cmd = { "bundle", "exec", "rubocop", "--lsp" },
+        --   root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
+        -- },
         ruby_lsp = {
-          cmd = { os.getenv("HOME") .. "/.asdf/shims/ruby-lsp", "stdio" },
+          cmd = { "mise", "exec", "--", "ruby-lsp", "stdio" },
           root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
         },
         sqlls = {},

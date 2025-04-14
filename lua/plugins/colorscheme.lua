@@ -1,11 +1,45 @@
+-- return {
+--   "catppuccin/nvim",
+--   name = "catppuccin",
+--   priority = 1000,
+--   config = function()
+--     require("catppuccin").setup({
+--       color_overrides = {
+--         mocha = {
+--           base = "#1c1917",
+--           blue = "#22d3ee",
+--           green = "#86efac",
+--           flamingo = "#D6409F",
+--           lavender = "#DE51A8",
+--           pink = "#f9a8d4",
+--           red = "#fda4af",
+--           maroon = "#f87171",
+--           mauve = "#D19DFF",
+--           text = "#E8E2D9",
+--           sky = "#7ee6fd",
+--           yellow = "#fde68a",
+--           rosewater = "#f4c2c2",
+--           peach = "#fba8c4",
+--           teal = "#4fd1c5",
+--         },
+--       },
+--     })({
+--       "LazyVim/LazyVim",
+--       opts = {
+--         colorscheme = "catppuccin",
+--       },
+--     })
+--   end,
+-- }
+
 return {
   -- { "oxfist/night-owl.nvim", lazy = false, opts = { transparent_background = true, italics = false } },
   -- { "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = { transparent = true } },
   -- { "folke/tokyonight.nvim", lazy = false, priority = 1000 },
-  -- -- { "catppuccin/nvim", name = "catppuccin", opts = { transparent_background = true } },
+  -- { "catppuccin/nvim", name = "catppuccin" },
   -- { "rose-pine/neovim", name = "rose-pine", opts = { variant = "moon", styles = { transparency = true } } },
-  { "rose-pine/neovim", name = "rose-pine", opts = { variant = "moon" } },
-  -- -- { "EdenEast/nightfox.nvim", opts = { transparent = true } },
+  -- { "rose-pine/neovim", name = "rose-pine", opts = { variant = "moon" } },
+  -- { "EdenEast/nightfox.nvim", opts = { transparent = true } },
   -- {
   --   "eldritch-theme/eldritch.nvim",
   --   lazy = false,
@@ -14,9 +48,28 @@ return {
   -- },
   -- { "Tsuzat/NeoSolarized.nvim", lazy = false, priority = 1000, opts = { transparent = true } },
   -- {
+  --   "scottmckendry/cyberdream.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = { transparent = true },
+  -- },
+  -- {
+  --   "loctvl842/monokai-pro.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = { filter = "octagon" },
+  -- },
+  -- {
+  --   "lalitmee/cobalt2.nvim",
+  --   dependencies = { "tjdevries/colorbuddy.nvim", tag = "v1.0.0" },
+  --   init = function()
+  --     require("colorbuddy").colorscheme("cobalt2")
+  --   end,
+  -- },
+  -- {
   --   "LazyVim/LazyVim",
   --   opts = {
-  --     colorscheme = "rose-pine",
+  --     colorscheme = "cobalt2",
   --   },
   -- },
 }
